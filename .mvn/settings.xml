@@ -1,0 +1,34 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <servers>
+        <server>
+            <id>bintray</id>
+            <username>iherasymenko</username>
+            <password>${env.BINTRAY_KEY}</password>
+        </server>
+    </servers>
+
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>bintray</id>
+                    <name>bintray</name>
+                    <url>https://dl.bintray.com/iherasymenko/epm-lab</url>
+                </repository>
+            </repositories>
+            <id>bintray</id>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>bintray</activeProfile>
+    </activeProfiles>
+
+</settings>
