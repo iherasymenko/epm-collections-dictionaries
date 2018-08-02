@@ -1,6 +1,6 @@
 language: java
 jdk: openjdk8
 install:
-- ./mvnw dependency:go-offline
+- ./mvnw dependency:go-offline -DexcludeReactor=false
 script:
 - ./mvnw clean test
