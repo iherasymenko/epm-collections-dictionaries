@@ -2,5 +2,6 @@ language: java
 jdk: openjdk8
 install:
 - ./mvnw dependency:resolve
+- ./mvnw dependency:resolve-plugins
 script:
 - ./mvnw clean test
