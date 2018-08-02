@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Trie implements Dictionary {
 
     private static class Node {
-        Node[] children = new Node[21];
+        Node[] children = new Node[26];
         boolean word;
         int count;
 
