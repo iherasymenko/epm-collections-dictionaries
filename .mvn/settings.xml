@@ -15,6 +15,14 @@
         <profile>
             <repositories>
                 <repository>
+                    <id>central</id>
+                    <name>central</name>
+                    <url>https://repo1.maven.org/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
                     <snapshots>
                         <enabled>false</enabled>
                     </snapshots>
